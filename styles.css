@@ -1,0 +1,133 @@
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: black;
+}
+
+ body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+} 
+
+input[type=file] {
+  display: none;
+}
+
+label span {
+  padding: 8px 12px;
+  background: #084cdf;
+  color: #fff;
+  cursor: pointer;
+}
+
+label span:hover {
+  background: #0d45a5;
+}
+
+#canvas{
+  display: none;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 706px;
+}
+
+.container{
+  width: 400px;
+  display: none;
+  border: 1px solid white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 10px;
+  box-shadow:rgba(0, 0, 0, 0.26) 1px 26px 51px -13px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.container:hover{
+
+  opacity: 1;
+  transform: translate(-50%, -60%);
+}
+
+
+@media screen and (max-width: 500px) {
+  /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+  .welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+#canvas{
+  display: none;
+  border: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 706px;
+}
+
+.container{
+  width: 300px;
+  display: none;
+  border: 1px solid white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-radius: 10px;
+  box-shadow:rgba(0, 0, 0, 0.26) 1px 26px 51px -13px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.container:hover{
+
+  opacity: 1;
+  transform: translate(-50%, -60%);
+}
+  }
