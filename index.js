@@ -38,7 +38,7 @@ fileInput.addEventListener("change", (e) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       let particulesArray = [];
-      const numberofParticules = 15000;
+      const numberofParticules = 7000;
       let mappedImage = [];
 
       for (let y = 0; y < canvas.height; y++) {
